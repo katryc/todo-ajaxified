@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+<h1>New Task</h1>
+<%= render 'form'%>
+<h1>Listing Tasks</h1>
+<a href="javascript:$('.tasks').slideUp('slow');">Hide</a>
+<a href="javascript:$('.tasks').slideDown('slow');">Show</a>
+<div class="tasks">
+<%=render @tasks %>
+</div>
+<br>
